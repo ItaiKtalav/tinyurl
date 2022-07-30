@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyUrl", "TinyUrl.csproj", "{0D805051-EDDB-4CE9-9C48-9637A2DBC2CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyUrl", "src\TinyUrl\TinyUrl.csproj", "{6B32B251-C84F-4E10-B67C-F016E6F81254}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0D805051-EDDB-4CE9-9C48-9637A2DBC2CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D805051-EDDB-4CE9-9C48-9637A2DBC2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D805051-EDDB-4CE9-9C48-9637A2DBC2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D805051-EDDB-4CE9-9C48-9637A2DBC2CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B32B251-C84F-4E10-B67C-F016E6F81254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B32B251-C84F-4E10-B67C-F016E6F81254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B32B251-C84F-4E10-B67C-F016E6F81254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B32B251-C84F-4E10-B67C-F016E6F81254}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

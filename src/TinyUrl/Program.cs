@@ -1,3 +1,6 @@
+using MongoDB.Driver;
+using TinyUrl.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +9,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddTransient<IShortenerService, ShortenerService>();
+builder.Services.AddTransient<IMongoClient, MongoClient>(); // Connect with the default connection string. I hope configuration isn't part of the task
 
 var app = builder.Build();
 
