@@ -1,11 +1,11 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 
-namespace TinyUrl.Models
+namespace TinyUrl.Models;
+
+[BsonIgnoreExtraElements]
+public class ShortUrl
 {
-    [BsonIgnoreExtraElements]
-    public class ShortUrl
-    {
-        public string Url { get; set; } = "";
-        public string Key { get; set; } = "";
-    }
+    public string Url { get; init; } 
+    public string Key { get; init; } 
 }
+

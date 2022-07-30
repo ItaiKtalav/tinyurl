@@ -1,20 +1,19 @@
-﻿namespace TinyUrl.Services
+﻿namespace TinyUrl.Services;
+
+public static class KeyGenerator
 {
-    public static class KeyGenerator
+    private static readonly Random _random = new();
+    private const string _chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+
+    public static string Generate(int length)
     {
-        private static readonly Random _random = new();
-        private const string _chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+        var key = new char[length];
 
-        public static string Generate(int length)
+        for (int i = 0; i < length; i++)
         {
-            var key = new char[length];
-
-            for (int i = 0; i < length; i++)
-            {
-                key[i] = _chars[_random.Next(_chars.Length)];
-            }
-
-            return new String(key);
+            key[i] = _chars[_random.Next(_chars.Length)];
         }
+
+        return new String(key);
     }
 }
